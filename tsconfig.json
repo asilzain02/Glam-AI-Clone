@@ -19,4 +19,8 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]
+    "paths": { "@/*": ["src/*"] },
+    "types": ["nativewind/types"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }
