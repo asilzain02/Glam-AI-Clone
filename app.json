@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Glam AI Clone",
+    "slug": "glam-ai-clone",
+    "scheme": "glamai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": { "backgroundColor": "#000000", "resizeMode": "cover" },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.eightxsocial.glamai" },
+    "android": { "package": "com.eightxsocial.glamai", "adaptiveIcon": { "backgroundColor": "#000000" } },
+    "web": { "bundler": "metro", "output": "static" },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Glam AI needs access to your photos to apply AI effects.",
+          "cameraPermission": "Glam AI needs camera access to capture photos for AI editing."
+        }
+      ]
+    ]
+  }
+}

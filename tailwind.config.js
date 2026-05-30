@@ -1,0 +1,51 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {
+      colors: {
+        obsidian: '#000000',
+        midnight: '#0F172A',
+        navy: '#0A0F1E',
+        pearl: '#FFFFFF',
+        glamPink: '#FF4D8D',
+        glamPinkDark: '#D63875',
+        royalViolet: '#8B5CF6',
+        royalVioletDark: '#6D28D9',
+        champagne: '#F9E7C8',
+        mint: '#6EE7B7',
+        glass: 'rgba(255,255,255,0.10)',
+        glassBorder: 'rgba(255,255,255,0.18)',
+        glassDark: 'rgba(0,0,0,0.40)',
+        surface: 'rgba(255,255,255,0.06)',
+      },
+      fontFamily: {
+        inter: ['Inter_400Regular'],
+        'inter-semi': ['Inter_600SemiBold'],
+        poppins: ['Poppins_700Bold'],
+      },
+      borderRadius: {
+        '4xl': '32px',
+        '5xl': '40px',
+      },
+      spacing: {
+        18: '72px',
+        22: '88px',
+        26: '104px',
+        30: '120px',
+        34: '136px',
+        38: '152px',
+        42: '168px',
+        72: '288px',
+        80: '320px',
+        88: '352px',
+        96: '384px',
+        104: '416px',
+        112: '448px',
+        120: '480px',
+      },
+    },
+  },
+  plugins: [],
+};
