@@ -1,3 +1,5 @@
+import { ProfileScreen } from '@/screens/ProfileScreen';
+export default ProfileScreen;
 import { Text, View } from 'react-native';
 import { GlamButton } from '@/components/GlamButton';
 import { GlamCard } from '@/components/GlamCard';

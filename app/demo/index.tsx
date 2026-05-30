@@ -1,3 +1,5 @@
+import { DemoScreen } from '@/screens/DemoScreen';
+export default DemoScreen;
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { ScrollView, Text, View } from 'react-native';

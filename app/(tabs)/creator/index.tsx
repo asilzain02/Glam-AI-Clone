@@ -1,3 +1,5 @@
+import { CreatorScreen } from '@/screens/CreatorScreen';
+export default CreatorScreen;
 import { router } from 'expo-router';
 import { Text, View } from 'react-native';
 import { GlamButton } from '@/components/GlamButton';

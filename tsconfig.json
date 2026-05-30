@@ -3,6 +3,22 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "nativewind/types"
+    ],
+    "ignoreDeprecations": "6.0"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
     "paths": { "@/*": ["src/*"] },
     "types": ["nativewind/types"]
   },

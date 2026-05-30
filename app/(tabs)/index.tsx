@@ -1,3 +1,5 @@
+import { HomeScreen } from '@/screens/HomeScreen';
+export default HomeScreen;
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { ScrollView, Text, View } from 'react-native';

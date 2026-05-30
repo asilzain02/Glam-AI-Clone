@@ -1,3 +1,5 @@
+import { EditorScreen } from '@/screens/EditorScreen';
+export default EditorScreen;
 import { router } from 'expo-router';
 import { Text, View } from 'react-native';
 import { GlamButton } from '@/components/GlamButton';
