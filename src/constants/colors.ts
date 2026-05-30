@@ -1,0 +1,33 @@
+export const colors = {
+  black: '#000000',
+  dark: '#0F172A',
+  white: '#FFFFFF',
+  pink: '#FF4D8D',
+  purple: '#8B5CF6',
+  ink: '#050507',
+  slate900: '#090E1A',
+  slate800: '#111827',
+  slate700: '#1F2937',
+  champagne: '#FFE9B8',
+  cyan: '#67E8F9',
+  mint: '#6EE7B7',
+  coral: '#FB7185',
+  amber: '#FBBF24',
+  textMuted: 'rgba(255,255,255,0.68)',
+  textSoft: 'rgba(255,255,255,0.48)',
+  glass: 'rgba(255,255,255,0.10)',
+  glassStrong: 'rgba(255,255,255,0.16)',
+  glassBorder: 'rgba(255,255,255,0.18)',
+  strokeSubtle: 'rgba(255,255,255,0.10)',
+} as const;
+
+export const gradients = {
+  app: [colors.black, '#080611', colors.dark] as const,
+  hero: ['#000000', '#17081C', '#24104D', '#0F172A'] as const,
+  glam: [colors.pink, colors.purple] as const,
+  violetGlass: ['rgba(139,92,246,0.32)', 'rgba(255,77,141,0.14)', 'rgba(255,255,255,0.06)'] as const,
+  darkGlass: ['rgba(255,255,255,0.15)', 'rgba(255,255,255,0.045)'] as const,
+  champagne: ['#FFE9B8', '#FF4D8D', '#8B5CF6'] as const,
+  cyber: ['#67E8F9', '#8B5CF6', '#FF4D8D'] as const,
+  editor: ['#141022', '#20113C', '#07070A'] as const,
+} as const;

@@ -1,0 +1,56 @@
+import { AIEffect, GlamProject } from '@/types';
+
+export const demoAccount = { email: 'demo@glamai.com', password: 'demo123', plan: 'Glam Pro', credits: 500 } as const;
+
+export const demoImages = [
+  'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=85&w=1400&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=85&w=1400&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=85&w=1400&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=85&w=1400&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=85&w=1400&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=85&w=1400&auto=format&fit=crop',
+] as const;
+
+export const effects: AIEffect[] = [
+  { id: 'beauty-pro', title: 'Beauty Pro', subtitle: 'Natural skin, eyes, lips', category: 'beauty', gradient: ['#FF4D8D', '#8B5CF6'], icon: '✨', prompt: 'Premium beauty retouch with natural skin texture, enhanced eyes, editorial makeup.' },
+  { id: 'retouch', title: 'Face Retouch', subtitle: 'Studio polish in seconds', category: 'beauty', gradient: ['#F472B6', '#FB7185'], icon: '💎', prompt: 'High-end portrait retouch with balanced highlights and preserved identity.' },
+  { id: 'bg-luxury', title: 'Luxury Background', subtitle: 'AI studio replacement', category: 'filter', gradient: ['#8B5CF6', '#0F172A'], icon: '🏙️', prompt: 'Remove background and place subject in luxury editorial studio lighting.' },
+  { id: 'object-clean', title: 'Object Eraser', subtitle: 'Brush and clean', category: 'beauty', gradient: ['#6EE7B7', '#8B5CF6'], icon: '🪄', prompt: 'Inpaint selected mask area and reconstruct clean realistic background.' },
+  { id: 'anime', title: 'Anime Muse', subtitle: 'Viral stylized portrait', category: 'filter', gradient: ['#FF9A9E', '#FAD0C4'], icon: '🌸', prompt: 'Transform portrait into high-end anime fashion art.' },
+  { id: 'barbie', title: 'Barbie Glow', subtitle: 'Pink cinematic dream', category: 'filter', gradient: ['#FF4D8D', '#FFD1DC'], icon: '🎀', prompt: 'Create glossy pink fashion campaign with doll-like glam lighting.' },
+  { id: 'cinematic', title: 'Cinematic', subtitle: 'Film still color grade', category: 'video', gradient: ['#0F172A', '#F59E0B'], icon: '🎬', prompt: 'Apply cinematic depth, warm film grain, and luxury contrast.' },
+];
+
+export const templates = [
+  { id: 'launch-reel', title: 'Launch Reel', meta: '9:16 · 8 sec · Beat cuts', gradient: ['#FF4D8D', '#8B5CF6'], image: demoImages[5] },
+  { id: 'cover-girl', title: 'Magazine Cover', meta: '4:5 · Editorial type', gradient: ['#FFE9B8', '#FF4D8D'], image: demoImages[0] },
+  { id: 'story-drop', title: 'Story Drop', meta: '9:16 · Beauty reveal', gradient: ['#67E8F9', '#8B5CF6'], image: demoImages[2] },
+  { id: 'carousel', title: 'Glow Carousel', meta: '4:5 · 6 slides', gradient: ['#6EE7B7', '#0F172A'], image: demoImages[4] },
+] as const;
+
+export const creators = [
+  { id: 'maya', name: 'Maya Chen', handle: '@mayaglow', image: demoImages[1], stat: '3.8M views' },
+  { id: 'sol', name: 'Sol Rivera', handle: '@solstudio', image: demoImages[3], stat: '918K saves' },
+  { id: 'nia', name: 'Nia Vale', handle: '@niavaleco', image: demoImages[4], stat: '41K remixes' },
+] as const;
+
+export const demoProjects: GlamProject[] = [
+  { id: 'p1', title: 'Velvet Glow Portrait', kind: 'photo', coverUrl: demoImages[0], status: 'completed', updatedAt: '2 min ago', format: '4:5' },
+  { id: 'p2', title: 'Runway Reveal Reel', kind: 'reel', coverUrl: demoImages[5], status: 'completed', updatedAt: '18 min ago', format: '9:16' },
+  { id: 'p3', title: 'Neon Beauty Story', kind: 'story', coverUrl: demoImages[2], status: 'processing', updatedAt: '32 min ago', format: '9:16' },
+  { id: 'p4', title: 'Editorial Carousel Kit', kind: 'carousel', coverUrl: demoImages[4], status: 'completed', updatedAt: '1 hr ago', format: '4:5' },
+  { id: 'p5', title: 'Cinematic Skin Retouch', kind: 'video', coverUrl: demoImages[3], status: 'completed', updatedAt: 'Yesterday', format: '9:16' },
+];
+
+export const screenshotScenarios = [
+  'Hero home screen with upload CTA',
+  'Trending AI effects carousel',
+  'Popular templates grid',
+  'Featured creators strip',
+  'Professional editor preview',
+  'Beauty tool panel selected',
+  'Pinterest gallery layout',
+  'Exports and favorites gallery state',
+  'Premium subscription profile card',
+  'Demo screenshot studio overview',
+] as const;
